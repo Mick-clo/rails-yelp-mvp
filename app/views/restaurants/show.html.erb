@@ -11,6 +11,8 @@
     <li class="list-group-item"><%= "Comment: #{review.content}" %></li>
   <% end %>
 </ul>
-<%= link_to 'Add a review!', new_restaurant_review_path(@restaurant) %>
 <br>
-<%= link_to 'Back to the list', restaurants_path %>
+<%= link_to 'Add a review!', new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+<br>
+<br>
+<%= link_to 'Back to the list', restaurants_path, class: "btn btn-primary" %>
